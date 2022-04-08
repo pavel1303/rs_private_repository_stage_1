@@ -1,0 +1,4 @@
+.navigation{
+   @include flex(row nowrap, center, space-between);
+   list-style: none;
+}
