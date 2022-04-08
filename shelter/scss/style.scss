@@ -1,2 +1,9 @@
-@import 'base/__normalize';
 @import 'base/__fonts';
+@import 'base/__normalize';
+@import 'abstracts/_mixins';
+@import 'abstracts/_variables';
+@import 'base/_body';
+@import 'base/_wrapper';
+@import 'base/_container';
+@import 'layout/header/header';
+@import 'layout/footer/footer';
