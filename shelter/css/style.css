@@ -763,4 +763,47 @@ template {
   letter-spacing: 1.4px;
 }
 
+.help {
+  padding: 65px 87px;
+  background-color: #FFFFFF;
+}
+.help .container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.help__content {
+  max-width: 1026px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 55px 117px;
+}
+
+.help__item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.help__subtitle {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+  letter-spacing: 0.07em;
+}
+
+.help__title {
+  max-width: 310px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
