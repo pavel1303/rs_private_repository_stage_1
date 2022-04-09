@@ -1,3 +1,6 @@
 .start__text{
-   
+   max-width: 460px;
+   @include font($arial, $size: #{$p-l-size}, $color:#{$dark-s});
+   margin-bottom: 42px;
+   line-height: 160%;
 }
