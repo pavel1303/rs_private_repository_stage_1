@@ -3,11 +3,12 @@
    height: 52px;
    background-color: transparent;
    border-radius: 25px;
-   border: 2px solid $primary-light;
+   border: 2px solid $primary;
    @include font($size: #{$btn-size},$color:#{$text-in-btn});
    letter-spacing: 1px;
    transition: 0.5s;
    &:hover{
+      border: 2px solid $primary-light;
       background-color: $primary-light;
       cursor: pointer;
    }

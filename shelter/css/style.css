@@ -583,7 +583,7 @@ template {
   height: 52px;
   background-color: transparent;
   border-radius: 25px;
-  border: 2px solid #FDDCC4;
+  border: 2px solid #F1CDB3;
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -593,6 +593,7 @@ template {
   transition: 0.5s;
 }
 .button-wihtout-bg:hover {
+  border: 2px solid #FDDCC4;
   background-color: #FDDCC4;
   cursor: pointer;
 }
@@ -671,7 +672,7 @@ template {
   height: 52px;
   background-color: transparent;
   border-radius: 25px;
-  border: 2px solid #FDDCC4;
+  border: 2px solid #F1CDB3;
   font-family: Georgia;
   font-style: normal;
   font-weight: 400;
@@ -681,6 +682,7 @@ template {
   transition: 0.5s;
 }
 .button-wihtout-bg:hover {
+  border: 2px solid #FDDCC4;
   background-color: #FDDCC4;
   cursor: pointer;
 }
@@ -690,6 +692,7 @@ template {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 51px;
 }
 
 .slider__content {
@@ -698,6 +701,40 @@ template {
   align-items: center;
   justify-content: space-between;
   gap: 90px;
+}
+
+.slider__left {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.slider__left:hover {
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  cursor: pointer;
+}
+
+.slider__right {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.slider__right:hover {
+  background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  cursor: pointer;
 }
 
 .pet-card {
