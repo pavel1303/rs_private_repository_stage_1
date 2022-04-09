@@ -573,4 +573,48 @@ template {
   letter-spacing: 1px;
 }
 
+.about {
+  background-color: #FFFFFF;
+}
+.about .container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__content {
+  max-width: 430px;
+  margin: 94px 175px 114px 0;
+}
+
+.about__title {
+  margin: 0 0 25px 0;
+  max-width: 370px;
+  letter-spacing: 2.1px;
+  line-height: 130%;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
+}
+
+.about__text {
+  margin: 0;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #4C4C4C;
+  line-height: 160%;
+}
+.about__text:first-of-type {
+  margin-bottom: 25px;
+}
+
+.about__img {
+  margin: 0 0 20px 175px;
+}
+
 /*# sourceMappingURL=style.css.map */
