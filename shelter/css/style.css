@@ -571,6 +571,40 @@ template {
   font-size: 17px;
   color: #292929;
   letter-spacing: 1px;
+  transition: 0.5s;
+}
+.button-with-bg:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+
+.button-wihtout-bg {
+  width: 186px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid #FDDCC4;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #292929;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.button-wihtout-bg:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+
+.title {
+  letter-spacing: 2.1px;
+  line-height: 130%;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  color: #545454;
 }
 
 .about {
@@ -591,13 +625,6 @@ template {
 .about__title {
   margin: 0 0 25px 0;
   max-width: 370px;
-  letter-spacing: 2.1px;
-  line-height: 130%;
-  font-family: Georgia;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  color: #545454;
 }
 
 .about__text {
@@ -615,6 +642,88 @@ template {
 
 .about__img {
   margin: 0 0 20px 175px;
+}
+
+.pets {
+  background-color: #F6F6F6;
+}
+.pets .container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pets__title {
+  margin: 80px 0 58px 0;
+  max-width: 400px;
+  text-align: center;
+}
+
+.pets__button {
+  width: 261px;
+  margin-bottom: 100px;
+}
+
+.button-wihtout-bg {
+  width: 186px;
+  height: 52px;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 2px solid #FDDCC4;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #292929;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.button-wihtout-bg:hover {
+  background-color: #FDDCC4;
+  cursor: pointer;
+}
+
+.slider {
+  margin: 0 0 60px 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slider__content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.pet-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+}
+.pet-card:hover {
+  cursor: pointer;
+}
+
+.pet-card__button {
+  margin-bottom: 30px;
+}
+
+.pet-card__subtitle {
+  margin: 30px 0 30px 0;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #545454;
+  letter-spacing: 1.4px;
 }
 
 /*# sourceMappingURL=style.css.map */

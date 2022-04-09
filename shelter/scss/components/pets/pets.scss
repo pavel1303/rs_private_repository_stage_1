@@ -1,3 +1,6 @@
 .pets{
-   
+   background-color: $light-l;
+   .container{
+      @include flex(column nowrap);  
+   }
 }
