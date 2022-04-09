@@ -645,24 +645,25 @@ template {
 }
 
 .pets {
+  padding: 80px 0;
   background-color: #F6F6F6;
 }
 .pets .container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 59px;
 }
 
 .pets__title {
-  margin: 80px 0 58px 0;
+  margin: 0;
   max-width: 400px;
   text-align: center;
 }
 
 .pets__button {
   width: 261px;
-  margin-bottom: 100px;
 }
 
 .button-wihtout-bg {
@@ -685,7 +686,6 @@ template {
 }
 
 .slider {
-  margin: 0 0 60px 0;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
