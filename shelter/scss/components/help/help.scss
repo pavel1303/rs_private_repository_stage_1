@@ -1,5 +1,5 @@
 .help{
-   padding: 65px 87px;
+   padding: 45px 87px 65px ;
    background-color: $light-xl;
    .container{
       @include flex(column nowrap, center, space-between);
