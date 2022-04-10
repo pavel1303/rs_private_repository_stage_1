@@ -1,12 +1,4 @@
 .navigation__link{
    @include font($arial,$color:#{$dark-s});
    text-decoration: none;
-   &:hover{
-      color: $light-s;
-   }
-   &:active{
-      color: $light-s;
-      padding-bottom: 7px;
-      border-bottom: 3px solid $primary;
-   }
 }

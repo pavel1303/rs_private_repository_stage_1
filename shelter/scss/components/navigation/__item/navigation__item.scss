@@ -1,3 +1,15 @@
 .navigation__item{
    margin-left: 36px;
+   padding-bottom: 5px;
+   &:hover{
+      color: $light-s;
+   }
+   &:active{
+      color: $light-s;
+      border-bottom: 3px solid $primary;
+   }
+   &:nth-of-type(1){
+      color: $light-s;
+      border-bottom: 3px solid $primary;
+   }
 }
