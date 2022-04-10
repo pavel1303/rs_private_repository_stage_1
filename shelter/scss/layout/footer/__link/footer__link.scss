@@ -1,3 +1,12 @@
 .footer__link{
-   
+   position: relative;
+   padding-left: 41px;
+   @include font($size:#{$subtitle}, $color: #{$primary});
+   letter-spacing: 0.06em;
+   text-decoration: none;
+   &::before{
+      position: absolute;
+      content: url('../../../../assets/icons/icon-marker.svg');
+      left:0;
+   }
 }

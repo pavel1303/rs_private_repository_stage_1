@@ -6,7 +6,6 @@
 @import 'base/_wrapper';
 @import 'base/_container';
 @import 'layout/header/header';
-@import 'layout/footer/footer';
 @import 'base/_main';
 
 @import 'layout/header/__title/header__title';
@@ -61,3 +60,10 @@
 @import 'components/donation/__text/donation__text';
 @import 'components/donation/__title/donation__title';
 @import 'components/donation/__img/donation__img';
+
+@import 'layout/footer/footer';
+@import 'layout/footer/__content/footer__content';
+@import 'layout/footer/__email/footer__email';
+@import 'layout/footer/__link/footer__link';
+@import 'layout/footer/__title/footer__title';
+@import 'layout/footer/_tel/footer__tel';

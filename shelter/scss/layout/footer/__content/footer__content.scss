@@ -1,3 +1,7 @@
 .footer__content{
-   
+   @include flex(column nowrap, flex-start, space-between);
+   gap: 35px;
+   &:nth-child(2){
+      margin-left: -15px;
+   }
 }

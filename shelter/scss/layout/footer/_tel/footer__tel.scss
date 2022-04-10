@@ -1,3 +1,15 @@
 .footer__tel{
-   
+   position: relative;
+   margin-top: 12px;
+   padding-left: 61px;
+   @include font($size:#{$subtitle}, $color: #{$primary});
+   letter-spacing: 0.06em;
+   text-decoration: none;
+   &::before{
+      position: absolute;
+      content: url('../../../../assets/icons/icon-phone.svg');
+      left:0;
+      top: -3px;
+   }
+
 }
