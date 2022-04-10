@@ -764,7 +764,7 @@ template {
 }
 
 .help {
-  padding: 45px 87px 65px;
+  padding: 45px 87px 100px;
   background-color: #FFFFFF;
 }
 .help .container {
@@ -804,6 +804,65 @@ template {
 .help__title {
   max-width: 310px;
   text-align: center;
+}
+
+.donation {
+  padding: 80px 0 100px;
+  background-color: #F6F6F6;
+}
+.donation .container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.donation__button {
+  position: relative;
+  margin-top: 18px;
+  padding: 0 0 0 42px;
+  width: 349px;
+  height: 43px;
+  border-radius: 9px;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+.donation__button::before {
+  content: url("../../../../assets/icons/credit-card.svg");
+  position: absolute;
+  left: 14px;
+  top: 10px;
+}
+
+.donation__content {
+  max-width: 380px;
+}
+
+.donation__description {
+  display: block;
+  margin-top: 20px;
+  font-family: arial;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  color: #B2B2B2;
+  line-height: 150%;
+}
+
+.donation__text {
+  display: block;
+  margin-top: 20px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #545454;
+  letter-spacing: 0.06em;
+}
+
+.donation__title {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

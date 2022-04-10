@@ -1,3 +1,6 @@
 .donation__text{
-   
+   display: block;
+   margin-top: 20px;
+   @include font($color: #{$titles});
+   letter-spacing: 0.06em;
 }

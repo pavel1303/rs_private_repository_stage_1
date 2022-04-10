@@ -1,3 +1,6 @@
 .donation__description{
-   
+   display: block;
+   margin-top: 20px;
+   @include font(arial, italic, $size: 12px, $color: #{$paragraph-s});
+   line-height: 150%;
 }
