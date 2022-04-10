@@ -448,14 +448,15 @@ template {
 .container {
   margin: 0 auto;
   padding: 0 40px;
-  width: 1200px;
   max-width: 1200px;
 }
 
 .header {
   width: 100%;
   background: url("../../../assets/images/start-screen-gradient-background.png"), url("../../../assets/images/start-screen-background.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 .header .container {
   display: flex;
@@ -522,9 +523,10 @@ template {
 }
 
 .start {
-  width: 100%;
   background: url("../../../assets/images/start-screen-gradient-background.png"), url("../../../assets/images/start-screen-background.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -180px;
 }
 .start .container {
   display: flex;
@@ -692,7 +694,7 @@ template {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 51px;
+  gap: 47px;
 }
 
 .slider__content {
