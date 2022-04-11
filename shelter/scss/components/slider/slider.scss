@@ -1,4 +1,4 @@
 .slider{
-   @include flex($j-cont: space-between);
+   @include flex($j-cont: center);
    gap: 47px;
 }

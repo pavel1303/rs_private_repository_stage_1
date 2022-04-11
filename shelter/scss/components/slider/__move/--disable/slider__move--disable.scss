@@ -1,0 +1,9 @@
+.slider__move--disable{
+   border: 2px solid $dark-s;
+   color: $dark-s;
+   &:hover{
+      background-color: transparent;
+      border: 2px solid $dark-s;
+      cursor: not-allowed;
+   }
+}

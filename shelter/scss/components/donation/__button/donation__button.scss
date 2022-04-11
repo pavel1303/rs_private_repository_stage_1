@@ -1,8 +1,9 @@
 .donation__button{
    position: relative;
    margin-top: 18px;
-   padding: 0 0 0 42px;
-   width: 349px;
+   justify-content: flex-end;
+   padding: 0 23px 0 15px;
+   width: 83%;
    height: 43px;
    border-radius: 9px;
    font-size: $subtitle;

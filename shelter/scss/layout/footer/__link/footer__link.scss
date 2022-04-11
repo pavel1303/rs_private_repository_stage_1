@@ -7,6 +7,12 @@
    &::before{
       position: absolute;
       content: url('../../../../assets/icons/icon-marker.svg');
-      left:0;
+      left: -1px;
+      top:5px;
+   }
+   &:last-child{
+      &::before{
+         top:-5px;
+      }
    }
 }
