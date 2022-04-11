@@ -1,0 +1,7 @@
+.slider__move--active {
+   background-color: $primary;
+   &:hover{
+      background-color: $primary;
+      border: 2px solid $primary;
+   }
+}

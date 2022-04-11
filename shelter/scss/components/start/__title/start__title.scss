@@ -1,0 +1,6 @@
+.start__title{
+   @include font($size:#{$h2-size}, $color:#{$light-xl});
+   max-width: 310px;
+   margin: 0 0 41px 0;
+   line-height: 130%;
+}

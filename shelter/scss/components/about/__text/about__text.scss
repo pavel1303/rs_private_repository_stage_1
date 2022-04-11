@@ -1,0 +1,8 @@
+.about__text{
+   margin: 0;
+   @include font(Arial, normal, 400, $p-l-size, $paragraph-l);
+   line-height: 160%;
+   &:first-of-type{
+      margin-bottom: 25px;
+   }
+}

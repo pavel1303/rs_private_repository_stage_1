@@ -1,0 +1,4 @@
+.help__item{
+   @include flex(column nowrap, center, space-between);
+   gap: 30px;
+}

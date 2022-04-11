@@ -1,0 +1,6 @@
+.about{
+   background-color: $light-xl;
+   .container{
+      @include flex(row-reverse nowrap, center, space-between);
+   }
+}

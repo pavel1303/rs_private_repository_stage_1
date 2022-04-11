@@ -1,0 +1,8 @@
+.help{
+   padding: 45px 87px 100px ;
+   background-color: $light-xl;
+   .container{
+      @include flex(column nowrap, center, space-between);
+      gap: 25px;
+   }
+}

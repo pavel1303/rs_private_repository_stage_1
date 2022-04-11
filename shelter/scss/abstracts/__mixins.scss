@@ -1,0 +1,13 @@
+@mixin flex($f-flow: row wrap, $a-items: center, $j-cont: center) {
+   display: flex;
+   flex-flow: $f-flow;
+   align-items: $a-items;
+   justify-content: $j-cont;
+}
+@mixin font($family:Georgia, $style: normal, $weight: 400, $size: #{$p-l-size}, $color: #{$modal}) {
+   font-family: $family;
+   font-style: $style;
+   font-weight: $weight;
+   font-size: $size;
+   color: $color;
+}

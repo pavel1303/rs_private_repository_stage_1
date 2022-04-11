@@ -1,0 +1,8 @@
+.donation{
+   padding: 80px 0 100px;
+   background-color: $light-l;
+   .container{
+      @include flex(row-reverse nowrap);
+      gap: 34px;
+   }
+}

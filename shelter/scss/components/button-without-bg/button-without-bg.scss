@@ -1,0 +1,17 @@
+.button-wihtout-bg{
+   @include flex();
+   width: 186px;
+   height: 52px;
+   background-color: transparent;
+   border-radius: 25px;
+   border: 2px solid $primary;
+   @include font($size: #{$btn-size},$color:#{$text-in-btn});
+   letter-spacing: 1px;
+   text-decoration: none;
+   transition: 0.5s;
+   &:hover{
+      border: 2px solid $primary-light;
+      background-color: $primary-light;
+      cursor: pointer;
+   }
+}

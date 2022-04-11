@@ -1,0 +1,10 @@
+.start{
+   padding-top: 60px;
+   background: url('../../../assets/images/start-screen-gradient-background.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center -120px;
+   .container{
+      @include flex(row nowrap, center, space-between);
+   }
+}

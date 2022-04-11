@@ -1,0 +1,5 @@
+.help__content{
+   max-width: 1026px;
+   @include flex();
+   gap: 55px 117px;
+}
