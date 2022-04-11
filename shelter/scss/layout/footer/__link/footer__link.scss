@@ -6,7 +6,7 @@
    text-decoration: none;
    &::before{
       position: absolute;
-      content: url('/assets/icons/icon-marker.svg');
+      content: url('./assets/icons/icon-marker.svg');
       left: -1px;
       top:5px;
    }
