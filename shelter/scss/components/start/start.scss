@@ -4,4 +4,15 @@
    .container{
       @include flex(row nowrap, center, space-between);
    }
+   @include media-laptop  {
+      padding-top: 60px;
+      .container{
+         flex-direction: column;
+         justify-content: center;
+      }
+      
+   }
+   @include media-tablet {
+      padding-top: 60px;
+   }
 }

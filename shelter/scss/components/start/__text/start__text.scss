@@ -3,4 +3,7 @@
    @include font($arial, $size: #{$p-l-size}, $color:#{$dark-s});
    margin-bottom: 42px;
    line-height: 160%;
+   @include media-laptop {
+      margin-bottom: 44px;
+   }
 }

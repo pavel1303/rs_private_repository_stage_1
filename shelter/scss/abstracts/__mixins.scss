@@ -25,5 +25,5 @@
  }
  
  @mixin media-mobilesmall{
-   @media screen and (max-width: $content-small-width){@content};
+   @media screen and (max-width: $mobile-small-width){@content};
  }

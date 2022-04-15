@@ -5,4 +5,11 @@
    .container{
       @include flex($j-cont: space-between);
    }
+   @include media-laptop  {
+      padding-top: 30px;
+   }
+   @include media-tablet {
+      padding-top: 30px;
+   }
+
 }

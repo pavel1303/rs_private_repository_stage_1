@@ -450,6 +450,16 @@ template {
   padding: 0 40px;
   max-width: 1200px;
 }
+@media screen and (max-width: 1197px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 
 .header {
   width: 100%;
@@ -461,6 +471,16 @@ template {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 1197px) {
+  .header {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 30px;
+  }
 }
 
 .main {
@@ -493,6 +513,12 @@ template {
   font-size: 13px;
   color: #FFFFFF;
   letter-spacing: 1.4px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .navigation {
@@ -538,9 +564,38 @@ template {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1197px) {
+  .start {
+    padding-top: 60px;
+  }
+  .start .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start {
+    padding-top: 60px;
+  }
+}
 
 .start__content {
-  padding: 163px 0 243px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 1197px) {
+  .start__content {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start__content {
+    padding-bottom: 105px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .start__title {
@@ -550,8 +605,15 @@ template {
   font-size: 44px;
   color: #FFFFFF;
   max-width: 310px;
-  margin: 0 0 41px 0;
+  margin: 0 0 25px 0;
   line-height: 130%;
+}
+@media screen and (max-width: 767px) {
+  .start__title {
+    max-width: 80%;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+  }
 }
 
 .start__text {
@@ -564,9 +626,35 @@ template {
   margin-bottom: 42px;
   line-height: 160%;
 }
+@media screen and (max-width: 1197px) {
+  .start__text {
+    margin-bottom: 44px;
+  }
+}
+
+.start__button {
+  width: 1000px;
+}
+@media screen and (max-width: 1197px) {
+  .start__button {
+    align-self: center;
+  }
+}
 
 .start__img {
   max-width: 698px;
+}
+@media screen and (max-width: 1197px) {
+  .start__img {
+    align-self: flex-end;
+    max-width: 569px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .start__img {
+    align-self: flex-end;
+    max-width: 260px;
+  }
 }
 
 .button-with-bg {
