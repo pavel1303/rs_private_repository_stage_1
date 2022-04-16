@@ -1,4 +1,22 @@
 .slider__content{
-   @include flex($j-cont: space-between);
-   gap:90px;
+   width: 83%;
+   padding: 60px 0 60px;
+   @include flex($f-flow: row nowrap,$j-cont: space-between);
+
+   @include media-laptop  {
+      justify-content: space-around;
+      gap: 32px;
+      >:nth-child(3){
+         display: none;
+      }
+   }
+   @include media-tablet {
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
+      padding: 42px 0 18px;
+      >:nth-child(2){
+         display: none;
+      }
+   }
 }

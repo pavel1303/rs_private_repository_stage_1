@@ -12,5 +12,7 @@
          border: 2px solid $primary-light;
       }
    }
-   
+   @include media-tablet {
+      order: 1;
+   }
 }

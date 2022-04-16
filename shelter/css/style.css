@@ -765,7 +765,7 @@ template {
 }
 
 .about__text {
-  margin: 0;
+  margin: 0 0 25px 0;
   font-family: Arial;
   font-style: normal;
   font-weight: 400;
@@ -773,14 +773,19 @@ template {
   color: #4C4C4C;
   line-height: 160%;
 }
-.about__text:first-of-type {
-  margin-bottom: 25px;
+.about__text:last-of-type {
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 767px) {
   .about__text {
     padding: 0 15px;
     text-align: justify;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__text {
+    margin: 0 0 20px 0;
   }
 }
 
@@ -809,7 +814,11 @@ template {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
-  gap: 59px;
+}
+@media screen and (max-width: 767px) {
+  .pets {
+    padding: 42px 0;
+  }
 }
 
 .pets__title {
@@ -848,19 +857,53 @@ template {
 }
 
 .slider {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 47px;
-}
-
-.slider__content {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 90px;
+}
+@media screen and (max-width: 1197px) {
+  .slider {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    padding-bottom: 41px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px 77px;
+  }
+}
+
+.slider__content {
+  width: 83%;
+  padding: 60px 0 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1197px) {
+  .slider__content {
+    justify-content: space-around;
+    gap: 32px;
+  }
+  .slider__content > :nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider__content {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 42px 0 18px;
+  }
+  .slider__content > :nth-child(2) {
+    display: none;
+  }
 }
 
 .slider__left {
@@ -879,6 +922,11 @@ template {
   border: 2px solid #FDDCC4;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .slider__left {
+    order: 2;
+  }
+}
 
 .slider__right {
   display: flex;
@@ -895,6 +943,11 @@ template {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .slider__right {
+    order: 3;
+  }
 }
 
 .slider__control {
@@ -939,6 +992,11 @@ template {
 .pet-card:hover .pet-card__button {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
+}
+@media screen and (max-width: 767px) {
+  .pet-card {
+    order: 1;
+  }
 }
 
 .pet-card__button {
