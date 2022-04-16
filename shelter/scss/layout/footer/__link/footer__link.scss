@@ -19,9 +19,11 @@
       
    }
    @include media-tablet{
+      width: 253px;
       margin-top: 2px;
       &:last-child{
-         margin-top: 8px;
+         margin-top: 10px;
+         margin-left: -5px;
       }
    }
 }

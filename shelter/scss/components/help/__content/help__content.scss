@@ -8,6 +8,7 @@
       gap: 55px 60px;
    }
    @include media-tablet{
+      max-width: 350px;
       padding-top: 16px;
       gap: 30px;
       justify-content: space-between;

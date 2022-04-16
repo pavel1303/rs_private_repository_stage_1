@@ -9,6 +9,7 @@
       
    }
    @include media-tablet{
+      align-items: center;
       flex-basis: 98%;
       &:nth-child(2){
          margin-left: 0;
