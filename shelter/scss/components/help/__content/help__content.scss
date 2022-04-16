@@ -1,5 +1,15 @@
 .help__content{
-   max-width: 1026px;
+   width: 1026px;
    @include flex();
    gap: 55px 117px;
+   @include media-laptop{
+      width: 100%;
+      justify-content: space-around;
+      gap: 55px 60px;
+   }
+   @include media-tablet{
+      padding-top: 16px;
+      gap: 30px;
+      justify-content: space-between;
+   }
 }

@@ -5,4 +5,10 @@
       @include flex(column nowrap, center, space-between);
       gap: 25px;
    }
+   @include media-laptop{
+      padding: 45px 39px 100px ;
+   }
+   @include media-tablet{
+      padding: 42px 5px;
+   }
 }

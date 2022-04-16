@@ -1024,22 +1024,66 @@ template {
   justify-content: space-between;
   gap: 25px;
 }
+@media screen and (max-width: 1197px) {
+  .help {
+    padding: 45px 39px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help {
+    padding: 42px 5px;
+  }
+}
 
 .help__content {
-  max-width: 1026px;
+  width: 1026px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   gap: 55px 117px;
 }
+@media screen and (max-width: 1197px) {
+  .help__content {
+    width: 100%;
+    justify-content: space-around;
+    gap: 55px 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help__content {
+    padding-top: 16px;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
 
 .help__item {
+  width: max-content;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+}
+@media screen and (max-width: 1197px) {
+  .help__item {
+    flex-basis: 25%;
+    min-width: 170px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help__item {
+    flex-basis: 35%;
+    min-width: 130px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .help__icon {
+    width: 50px;
+  }
 }
 
 .help__subtitle {
@@ -1050,10 +1094,20 @@ template {
   color: #545454;
   letter-spacing: 0.068em;
 }
+@media screen and (max-width: 767px) {
+  .help__subtitle {
+    font-size: 15px;
+  }
+}
 
 .help__title {
   max-width: 310px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .help__title {
+    margin: 0;
+  }
 }
 
 .donation {
