@@ -15,4 +15,13 @@
          top:-5px;
       }
    }
+   @include media-laptop{
+      
+   }
+   @include media-tablet{
+      margin-top: 2px;
+      &:last-child{
+         margin-top: 8px;
+      }
+   }
 }

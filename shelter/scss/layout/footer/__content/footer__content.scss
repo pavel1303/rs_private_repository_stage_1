@@ -1,7 +1,17 @@
 .footer__content{
    @include flex(column nowrap, flex-start, space-between);
    gap: 35px;
+   flex-basis: 42%;
    &:nth-child(2){
       margin-left: -15px;
+   }
+   @include media-laptop{
+      
+   }
+   @include media-tablet{
+      flex-basis: 98%;
+      &:nth-child(2){
+         margin-left: 0;
+      }
    }
 }
