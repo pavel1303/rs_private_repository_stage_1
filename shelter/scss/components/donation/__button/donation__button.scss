@@ -14,4 +14,11 @@
       left: 14px;
       top: 10px;
    }
+   @include media-tablet{
+      box-sizing: border-box;
+      padding: 0 15px 0 15px;
+      width: 281px;
+      font-size: $p-l-size;
+      letter-spacing: 1px;
+   }
 }

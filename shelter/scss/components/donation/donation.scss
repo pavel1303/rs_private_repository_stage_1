@@ -5,4 +5,12 @@
       @include flex(row-reverse nowrap);
       gap: 34px;
    }
+   @include media-laptop{
+      .container{
+         flex-direction: column;
+      }
+   }
+   @include media-tablet{
+      padding: 42px 0;
+   }
 }
