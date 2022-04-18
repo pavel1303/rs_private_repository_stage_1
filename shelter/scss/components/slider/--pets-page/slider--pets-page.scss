@@ -1,0 +1,10 @@
+.slider--pets-page{
+   @include flex(column nowrap, center, space-between);
+   gap: 46px;
+   @include media-laptop {
+      gap: 30px;
+   }
+   @include media-tablet{
+      gap: 29px;
+   }
+}

@@ -1,4 +1,8 @@
 .slider__control{
    @include flex(row nowrap, center, space-between);
    gap: 18px;
+
+   @include media-tablet{
+      gap: 8px;
+   }
 }

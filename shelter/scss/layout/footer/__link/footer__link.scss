@@ -15,4 +15,15 @@
          top:-5px;
       }
    }
+   @include media-laptop{
+      
+   }
+   @include media-tablet{
+      width: 253px;
+      margin-top: 2px;
+      &:last-child{
+         margin-top: 10px;
+         margin-left: -5px;
+      }
+   }
 }

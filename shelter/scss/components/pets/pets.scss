@@ -3,6 +3,11 @@
    background-color: $light-l;
    .container{
       @include flex(column nowrap, center, space-between);  
-      gap: 59px;
+   }
+   @include media-laptop  {
+      
+   }
+   @include media-tablet {
+      padding: 42px 0;
    }
 }

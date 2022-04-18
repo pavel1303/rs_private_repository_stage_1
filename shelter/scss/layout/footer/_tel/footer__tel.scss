@@ -11,5 +11,10 @@
       left:0;
       top: -3px;
    }
-
+   @include media-laptop{
+      
+   }
+   @include media-tablet{
+      
+   }
 }

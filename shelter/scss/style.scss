@@ -12,14 +12,18 @@
 @import 'layout/header/__link/header__link';
 @import 'layout/header/__logo/header__logo';
 @import 'layout/header/__subtitle/header__subtitle';
+@import 'layout/header/__navigation/header__navigation';
 @import 'components/navigation/navigation';
 @import 'components/navigation/__item/navigation__item';
 @import 'components/navigation/__link/navigation__link';
+@import 'components/burger/burger';
+@import 'components/burger/__line/burger__line';
 
 @import 'components/start/start';
 @import 'components/start/__content/start__content';
 @import 'components/start/__title/start__title';
 @import 'components/start/__text/start__text';
+@import 'components/start/__button/start__button';
 @import 'components/start/__img/start__img';
 
 @import 'components/button-with-bg/button-with-bg';
@@ -70,3 +74,4 @@
 @import 'layout/footer/__link/footer__link';
 @import 'layout/footer/__title/footer__title';
 @import 'layout/footer/_tel/footer__tel';
+@import 'layout/footer/__img/footer__img';

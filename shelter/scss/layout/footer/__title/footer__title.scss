@@ -3,4 +3,10 @@
    color: $light-xl;
    line-height: 130%;
    letter-spacing: 0.06em;
+   @include media-laptop{
+      margin: 0;
+   }
+   @include media-tablet{
+
+   }
 }
