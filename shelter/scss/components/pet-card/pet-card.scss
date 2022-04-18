@@ -1,4 +1,5 @@
 .pet-card {
+   width: 270px;
    @include flex(column);
    background-color: $light-s;
    border-radius: 9px;

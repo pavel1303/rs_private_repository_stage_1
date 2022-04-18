@@ -481,6 +481,10 @@ template {
   .header {
     padding-top: 30px;
   }
+  .header .container {
+    align-items: center;
+    padding-right: 53px;
+  }
 }
 
 .main {
@@ -552,6 +556,45 @@ template {
   font-size: 15px;
   color: #CDCDCD;
   text-decoration: none;
+}
+
+.burger {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 22px;
+}
+@media screen and (max-width: 767px) {
+  .burger {
+    display: block;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: #F1CDB3;
+}
+.burger__line::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #F1CDB3;
+}
+.burger__line::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #F1CDB3;
 }
 
 .start {
@@ -864,11 +907,6 @@ template {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1197px) {
-  .slider {
-    justify-content: space-between;
-  }
-}
 @media screen and (max-width: 767px) {
   .slider {
     padding-bottom: 41px;
@@ -958,6 +996,11 @@ template {
   justify-content: space-between;
   gap: 18px;
 }
+@media screen and (max-width: 767px) {
+  .slider__control {
+    gap: 8px;
+  }
+}
 
 .slider__move {
   display: flex;
@@ -977,6 +1020,7 @@ template {
 }
 
 .pet-card {
+  width: 270px;
   display: flex;
   flex-flow: column;
   align-items: center;

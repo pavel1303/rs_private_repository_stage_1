@@ -1,9 +1,6 @@
 .slider{
    width: 100%;
    @include flex($j-cont: space-between);
-   @include media-laptop  {
-      justify-content: space-between;
-   }
    @include media-tablet {
       padding-bottom: 41px;
       flex-direction: row;

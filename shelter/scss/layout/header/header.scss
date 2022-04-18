@@ -10,6 +10,10 @@
    }
    @include media-tablet {
       padding-top: 30px;
+      .container{
+         align-items: center;
+         padding-right: 53px;
+      }
    }
 
 }
