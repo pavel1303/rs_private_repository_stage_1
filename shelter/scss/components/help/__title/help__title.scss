@@ -1,4 +1,7 @@
 .help__title{
    max-width: 310px;
    text-align: center;
+   @include media-tablet{
+      margin: 0;
+   }
 }

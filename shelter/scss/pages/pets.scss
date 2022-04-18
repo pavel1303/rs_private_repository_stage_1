@@ -24,6 +24,10 @@
 @import '../layout/header/__logo/header__logo';
 @import '../layout/header/__subtitle/header__subtitle';
 @import '../layout/header/__subtitle/--page-pets/header__subtitle--page-pets';
+@import '../layout/header/__navigation/header__navigation';
+@import '../components/burger/burger';
+@import '../components/burger/__line/burger__line';
+@import '../components/burger/__line/__line--pets-page/burger__line--pets-page';
 
 @import '../components/navigation/navigation';
 @import '../components/navigation/__item/navigation__item';
@@ -36,6 +40,7 @@
 @import '../components/pets/__title/pets__title';
 
 @import '../components/slider/slider';
+@import '../components/slider/--pets-page/slider--pets-page';
 @import '../components/slider/__content/slider__content';
 @import '../components/slider/__content/--page-pets/slider__content--page-pets';
 @import '../components/slider/__left/slider__left';
@@ -51,3 +56,4 @@
 @import '../layout/footer/__link/footer__link';
 @import '../layout/footer/__title/footer__title';
 @import '../layout/footer/_tel/footer__tel';
+@import '../layout/footer/__img/footer__img';

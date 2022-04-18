@@ -1,4 +1,9 @@
 .help__subtitle{
    @include font($size: #{$subtitle}, $color: #{$titles});
    letter-spacing: 0.068em;
+
+   @include media-tablet{
+      font-size: $p-l-size;
+   }
+   
 }

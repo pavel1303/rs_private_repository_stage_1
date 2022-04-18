@@ -1,10 +1,18 @@
 .start{
    padding-top: 60px;
-   background: url('../assets/images/start-screen-gradient-background.png');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center -120px;
+   background:url('/assets/images/noise_trans.png') repeat , radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
    .container{
       @include flex(row nowrap, center, space-between);
+   }
+   @include media-laptop  {
+      padding-top: 60px;
+      .container{
+         flex-direction: column;
+         justify-content: center;
+      }
+      
+   }
+   @include media-tablet {
+      padding-top: 60px;
    }
 }

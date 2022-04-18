@@ -10,4 +10,7 @@
       border: 2px solid $primary-light;
       cursor: pointer;
    }
+   @include media-tablet {
+      order: 2;
+   }
 }

@@ -1,0 +1,9 @@
+.burger__line--pets-page{
+   background-color: #000000;
+   &::after{
+      background-color: #000000;
+   }
+   &::before{
+      background-color: #000000;
+   }
+}
