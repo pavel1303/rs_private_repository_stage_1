@@ -12,4 +12,8 @@
       color: $light-s;
       border-bottom: 3px solid $primary;
    }
+   @include media-tablet {
+      margin: 0;
+      padding: 0;
+   }
 }

@@ -437,6 +437,10 @@ template {
   color: #000000;
 }
 
+.body--no-scroll {
+  overflow: hidden;
+}
+
 .wrapper {
   height: 100vh;
   display: flex;
@@ -450,7 +454,7 @@ template {
   padding: 0 40px;
   max-width: 1200px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .container {
     padding: 0 30px;
   }
@@ -464,7 +468,7 @@ template {
 .header {
   width: 100%;
   padding: 60px 0 0 0;
-  background: url("/assets/images/noise_trans.png"), radial-gradient(100% 213.42% at 0% 80%, #5B483A 0%, #262425 100%);
+  background: url("../assets/images/noise_trans.png"), radial-gradient(100% 213.42% at 0% 80%, #5B483A 0%, #262425 100%);
   z-index: 100;
 }
 .header .container {
@@ -473,7 +477,7 @@ template {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .header {
     padding-top: 30px;
   }
@@ -485,6 +489,7 @@ template {
   .header .container {
     align-items: center;
     padding-right: 53px;
+    min-height: 60px;
   }
 }
 
@@ -508,6 +513,15 @@ template {
 
 .header__logo {
   margin: 0;
+  transition: all 0.7s;
+}
+
+.header__logo--open {
+  display: block;
+  position: fixed;
+  right: 125px;
+  top: 30px;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -522,8 +536,18 @@ template {
 
 @media screen and (max-width: 767px) {
   .header__navigation {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 1000px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease 0s;
   }
+}
+
+.header__navigation--open {
+  left: 0;
 }
 
 .navigation {
@@ -532,6 +556,28 @@ template {
   align-items: center;
   justify-content: space-between;
   list-style: none;
+}
+@media screen and (max-width: 767px) {
+  .navigation {
+    position: fixed;
+    right: -1000px;
+    top: 0;
+    margin: 0;
+    padding: 248px 38px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    width: 244px;
+    height: 100%;
+    background-color: #292929;
+    transition: all 0.7s;
+  }
+}
+
+.navigation--open {
+  right: 0;
 }
 
 .navigation__item {
@@ -549,6 +595,12 @@ template {
   color: #FAFAFA;
   border-bottom: 3px solid #F1CDB3;
 }
+@media screen and (max-width: 767px) {
+  .navigation__item {
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .navigation__link {
   font-family: Arial, sans-serif;
@@ -558,17 +610,31 @@ template {
   color: #CDCDCD;
   text-decoration: none;
 }
+@media screen and (max-width: 767px) {
+  .navigation__link {
+    font-size: 32px;
+    line-height: 160%;
+  }
+}
 
 .burger {
   position: relative;
   display: none;
   width: 30px;
   height: 22px;
+  transition: all 0.7s;
 }
 @media screen and (max-width: 767px) {
   .burger {
     display: block;
   }
+}
+
+.burger--open {
+  position: fixed;
+  top: 49px;
+  right: 54px;
+  transform: rotate(-90deg);
 }
 
 .burger__line {
@@ -600,7 +666,7 @@ template {
 
 .start {
   padding-top: 60px;
-  background: url("/assets/images/noise_trans.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  background: url("../assets/images/noise_trans.png") repeat, radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
 .start .container {
   display: flex;
@@ -608,7 +674,7 @@ template {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .start {
     padding-top: 60px;
   }
@@ -629,7 +695,7 @@ template {
   justify-content: center;
   padding-bottom: 80px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .start__content {
     padding-bottom: 100px;
   }
@@ -670,7 +736,7 @@ template {
   margin-bottom: 42px;
   line-height: 160%;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .start__text {
     margin-bottom: 44px;
   }
@@ -679,7 +745,7 @@ template {
 .start__button {
   width: 1000px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .start__button {
     align-self: center;
   }
@@ -688,7 +754,7 @@ template {
 .start__img {
   max-width: 698px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .start__img {
     align-self: flex-end;
     max-width: 569px;
@@ -778,7 +844,7 @@ template {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .about .container {
     flex-direction: column;
     align-items: center;
@@ -838,7 +904,7 @@ template {
   padding-right: 120px;
   margin: 0;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .about__img {
     padding: 78px 0 0 0;
   }
@@ -925,7 +991,7 @@ template {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .slider__content {
     justify-content: space-around;
     gap: 32px;
@@ -1070,7 +1136,7 @@ template {
   justify-content: space-between;
   gap: 25px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .help {
     padding: 45px 39px 100px;
   }
@@ -1089,7 +1155,7 @@ template {
   justify-content: center;
   gap: 55px 117px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .help__content {
     width: 100%;
     justify-content: space-around;
@@ -1113,7 +1179,7 @@ template {
   justify-content: space-between;
   gap: 30px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .help__item {
     flex-basis: 25%;
     min-width: 170px;
@@ -1168,7 +1234,7 @@ template {
   justify-content: center;
   gap: 34px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .donation .container {
     flex-direction: column;
   }
@@ -1264,7 +1330,7 @@ template {
   }
 }
 
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .donation__img {
     padding-top: 27px;
   }
@@ -1289,7 +1355,7 @@ template {
   justify-content: flex-start;
   gap: 160px;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .footer {
     padding: 30px 0 0 0;
   }
@@ -1381,7 +1447,7 @@ template {
   line-height: 130%;
   letter-spacing: 0.06em;
 }
-@media screen and (max-width: 1197px) {
+@media screen and (max-width: 1279px) {
   .footer__title {
     margin: 0;
   }

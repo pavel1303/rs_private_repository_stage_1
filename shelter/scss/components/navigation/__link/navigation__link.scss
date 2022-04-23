@@ -1,4 +1,8 @@
 .navigation__link{
    @include font($arial,$color:#{$dark-s});
    text-decoration: none;
+   @include media-tablet{
+      font-size: 32px;
+      line-height: 160%;
+   }
 }

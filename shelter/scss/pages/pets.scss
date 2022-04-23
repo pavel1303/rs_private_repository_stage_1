@@ -3,6 +3,7 @@
 @import '../abstracts/_mixins';
 @import '../abstracts/_variables';
 @import '../base/_body';
+@import '../base/--no-scroll/body--no-scroll';
 @import '../base/_wrapper';
 @import '../base/_container';
 @import '../base/_main';
@@ -22,18 +23,23 @@
 @import '../layout/header/__title/--page-pets/header__title--page-pets';
 @import '../layout/header/__link/header__link';
 @import '../layout/header/__logo/header__logo';
+@import '../layout/header/__logo/--open/header__logo--open';
 @import '../layout/header/__subtitle/header__subtitle';
 @import '../layout/header/__subtitle/--page-pets/header__subtitle--page-pets';
 @import '../layout/header/__navigation/header__navigation';
+@import '../layout/header/__navigation/--open/header__navigation--open';
 @import '../components/burger/burger';
+@import '../components/burger/--open/burger--open';
 @import '../components/burger/__line/burger__line';
 @import '../components/burger/__line/__line--pets-page/burger__line--pets-page';
 
 @import '../components/navigation/navigation';
+@import '../components/navigation/--open/navigation--open';
 @import '../components/navigation/__item/navigation__item';
 @import '../components/navigation/__item/--page-pets/navigation__item--page-pets';
 @import '../components/navigation/__link/navigation__link';
 @import '../components/navigation/__link/--page-pets/navigation__link--page-pets';
+@import '../components/navigation/--page-pets/navigation--page-pets';
 
 @import '../components/pets/pets';
 @import '../components/pets/--page-pets/pets--page-pets';
