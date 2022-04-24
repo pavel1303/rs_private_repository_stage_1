@@ -26,15 +26,16 @@ burgerMenu.burger.addEventListener('click', () => {
    burgerMenu.burger.classList.contains('burger--open') ? burgerMenu.close() : burgerMenu.open();
 });
 
-burgerMenu.shadow.addEventListener('click', () => {
+burgerMenu.shadow.addEventListener('click', (e) => {
+   let shadow = e.target;
+   if (!shadow.classList.contains('header__navigation--open')) return;
    page.classList.remove('body--no-scroll');
    burgerMenu.close();
-})
-
-burgerMenu.links.forEach(link => {
-   link.addEventListener('click', () => {
-      page.classList.remove('body--no-scroll');
-      burgerMenu.close();
-   })
 });
 
+burgerMenu.menu.addEventListener('click', (e) => {
+   let link = e.target.closest('a');
+   if (!link) return;
+   page.classList.remove('body--no-scroll');
+   burgerMenu.close();
+});
