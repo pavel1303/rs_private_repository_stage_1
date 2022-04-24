@@ -1,0 +1,9 @@
+.popup__text-content{
+   @include flex(column nowrap, flex-start, flex-start);
+   @include media-laptop{
+     
+   }
+   @include media-tablet{
+      align-items: center;
+   }
+}

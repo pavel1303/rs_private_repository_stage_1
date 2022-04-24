@@ -1,3 +1,4 @@
+import pets from "./pets_data.js";
 //Burger menu
 const page = document.querySelector('.body');
 
@@ -39,3 +40,50 @@ burgerMenu.menu.addEventListener('click', (e) => {
    page.classList.remove('body--no-scroll');
    burgerMenu.close();
 });
+
+//Popup 
+
+const popup = {
+   'shadow': document.querySelector('.popup'),
+   'overlay': document.querySelector('popup__overlay'),
+   'window': document.querySelector('.popup__window'),
+   'close': document.querySelector('.popup__close'),
+   'img': document.querySelector('.popup__img'),
+   'title': document.querySelector('.popup__title'),
+   'subtitle': document.querySelector('.popup__subtitle'),
+   'description': document.querySelector('.popup__description'),
+   'feature': document.querySelector('.popup__feature'),
+   'age': document.querySelector('.popup__age'),
+   'inoculations': document.querySelector('.popup__inoculations'),
+   'diseases': document.querySelector('.popup__diseases'),
+   'parasites': document.querySelector('.popup__parasites'),
+   'addContent': function (obj, namePet) {
+      popup.shadow.style.display = 'flex';
+      popup.img.src = obj[`${namePet}`].img;
+      popup.title.textContent = obj[`${namePet}`].name;
+      popup.subtitle.textContent = obj[`${namePet}`].type + ' - ' + obj[`${namePet}`].breed;
+      popup.description.textContent = obj[`${namePet}`].description;
+      popup.age.innerHTML = '<b>Age: </b>' + obj[`${namePet}`].age;
+      popup.inoculations.innerHTML = '<b>Inoculations: </b>' + (obj[`${namePet}`].inoculations).join(', ');
+      popup.diseases.innerHTML = '<b>Diseases: </b>' + (obj[`${namePet}`].diseases).join(', ');
+      popup.parasites.innerHTML = '<b>Parasites: </b>' + (obj[`${namePet}`].parasites).join(', ');
+      page.classList.add('body--no-scroll');
+   },
+   'closePopup': function () {
+      popup.shadow.style.display = 'none';
+      page.classList.remove('body--no-scroll');
+   }
+};
+
+document.querySelectorAll('.pet-card').forEach(card => {
+   card.addEventListener('click', () => {
+      let namePet = card.querySelector('.pet-card__subtitle').textContent;
+      popup.addContent(pets, namePet);
+   })
+})
+
+popup.shadow.addEventListener('click', (e) => {
+   let clickTarget = e.target;
+   if (!clickTarget.classList.contains('popup__close') && !clickTarget.classList.contains('popup__overlay')) return;
+   popup.closePopup();
+})

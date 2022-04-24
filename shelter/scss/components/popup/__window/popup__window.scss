@@ -1,0 +1,21 @@
+.popup__window{
+   position: relative;
+   @include flex(row nowrap, flex-start, flex-start);
+   gap: 30px;
+   width: 900px;
+   height: 500px;
+   background-color: $light-s;
+   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+   border-radius: 9px;
+   z-index: 200;
+   @include media-laptop{
+      width: 630px;
+      height: 350px;
+      gap:10px;
+   }
+   @include media-tablet{
+      padding: 0 10px 10px 10px;
+      width: 240px;
+      min-height: 341px;
+   }
+}

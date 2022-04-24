@@ -1,0 +1,41 @@
+.popup__close{
+   position: absolute;
+   top: -52px;
+   right: -52px;
+   width: 52px;
+   height: 52px;
+   border: 2px solid $primary;
+   border-radius: 50%;
+   transition: all 0.7s;
+   &::after{
+      position: absolute;
+      top:25px;
+      left:19px;
+      content: '';
+      display: block;
+      width: 15px;
+      height: 3px;
+      background-color: $text-in-btn;
+      transform: rotate(45deg);
+   }
+   &::before{
+      position: absolute;
+      top:25px;
+      left:19px;
+      content: '';
+      display: block;
+      width: 15px;
+      height: 3px;
+      background-color: $text-in-btn;
+      transform: rotate(-45deg);
+   }
+   &:hover{
+      cursor: pointer;
+      background-color: $primary;
+   }
+
+   @include media-tablet{
+      top: -60px;
+      right: -25px;
+   }
+}

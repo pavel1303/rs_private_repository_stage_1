@@ -1,0 +1,11 @@
+.popup__title{
+   margin: 55px 0 0 0;
+   @include font($size: #{$h3-size}, $color: #{$modal});
+   letter-spacing: 0.06em;
+   @include media-laptop{
+      margin-top: 15px;
+   }
+   @include media-tablet{
+      
+   }
+}

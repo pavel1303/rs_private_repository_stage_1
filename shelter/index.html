@@ -67,6 +67,24 @@
             </div>
          </section>
          <section class="pets" id="pets">
+            <div class="popup">
+               <div class="popup__overlay"></div>
+               <div class="popup__window">
+                  <img class="popup__img" src="" alt="Pet">
+                  <div class="popup__text-content">
+                     <h3 class="popup__title"></h3>
+                     <h4 class="popup__subtitle"></h4>
+                     <p class="popup__description"></p>
+                     <ul class="popup__feature">
+                        <li class="popup__age"></li>
+                        <li class="popup__inoculations"></li>
+                        <li class="popup__diseases"></li>
+                        <li class="popup__parasites"></li>
+                     </ul>
+                  </div>
+                  <div class="popup__close"></div>
+               </div>
+            </div>
             <div class="container">
                <h3 class="pets__title title">
                   Our friends who <br>
@@ -78,19 +96,19 @@
                   </div>
                   <div class="slider__content">
                      <div class="pet-card">
-                        <img class="pet-card__img" src="assets/images/pets-katrine.png" alt="Katrine">
+                        <img class="pet-card__img" src="assets/images/katrine.png" alt="Katrine">
                         <span class="pet-card__subtitle">Katrine</span>
-                        <a class="pet-card__button button-wihtout-bg" href="#">Learn more</a>
+                        <button class="pet-card__button button-wihtout-bg">Learn more</button>
                      </div>
                      <div class="pet-card">
-                        <img class="pet-card__img" src="assets/images/pets-jennifer.png" alt="Jennifer">
+                        <img class="pet-card__img" src="assets/images/jennifer.png" alt="Jennifer">
                         <span class="pet-card__subtitle">Jennifer</span>
-                        <a class="pet-card__button button-wihtout-bg" href="#">Learn more</a>
+                        <button class="pet-card__button button-wihtout-bg">Learn more</button>
                      </div>
                      <div class="pet-card">
-                        <img class="pet-card__img" src="assets/images/pets-woody.png" alt="Woody">
+                        <img class="pet-card__img" src="assets/images/woody.png" alt="Woody">
                         <span class="pet-card__subtitle">Woody</span>
-                        <a class="pet-card__button button-wihtout-bg" href="#">Learn more</a>
+                        <button class="pet-card__button button-wihtout-bg">Learn more</button>
                      </div>
                   </div>
                   <div class="slider__right">
@@ -183,7 +201,7 @@
          </div>
       </footer>
    </div>
-   <script src="js/index.js"></script>
+   <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
