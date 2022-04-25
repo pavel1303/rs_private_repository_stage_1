@@ -968,6 +968,7 @@ template {
 }
 
 .slider {
+  position: relative;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -979,36 +980,142 @@ template {
     padding-bottom: 41px;
     flex-direction: row;
     justify-content: center;
-    gap: 0px 77px;
+    gap: 0px 0px;
+  }
+}
+
+.slider__wrapper {
+  width: 980px;
+  overflow: hidden;
+}
+@media screen and (max-width: 1279px) {
+  .slider__wrapper {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider__wrapper {
+    margin: 0 10px;
+  }
+}
+
+.slider__group {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 90px;
+}
+@media screen and (max-width: 1279px) {
+  .slider__group {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider__group {
+    gap: 180px;
   }
 }
 
 .slider__content {
+  position: relative;
+  left: 85px;
   width: 83%;
   padding: 60px 0 60px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 90px;
+}
+@keyframes slide-left {
+  from {
+    left: 85px;
+  }
+  to {
+    left: 1165px;
+  }
+}
+.slider__content.transition-left {
+  animation-name: slide-left;
+  animation-duration: 1s;
+}
+@keyframes slide-right {
+  from {
+    left: 85px;
+  }
+  to {
+    left: -995px;
+  }
+}
+.slider__content.transition-right {
+  animation-name: slide-right;
+  animation-duration: 1s;
 }
 @media screen and (max-width: 1279px) {
   .slider__content {
+    left: 160px;
+    width: 580px;
     justify-content: space-around;
-    gap: 32px;
+    gap: 40px;
   }
-  .slider__content > :nth-child(3) {
-    display: none;
+  @keyframes slide-left {
+    from {
+      left: 160px;
+    }
+    to {
+      left: 1090px;
+    }
+  }
+  .slider__content.transition-left {
+    animation-name: slide-left;
+    animation-duration: 1s;
+  }
+  @keyframes slide-right {
+    from {
+      left: 160px;
+    }
+    to {
+      left: -770px;
+    }
+  }
+  .slider__content.transition-right {
+    animation-name: slide-right;
+    animation-duration: 1s;
   }
 }
 @media screen and (max-width: 767px) {
   .slider__content {
     width: 100%;
+    left: 450px;
     justify-content: space-around;
     align-items: center;
     padding: 42px 0 18px;
+    gap: 180px;
   }
-  .slider__content > :nth-child(2) {
-    display: none;
+  @keyframes slide-left {
+    from {
+      left: 450px;
+    }
+    to {
+      left: 1800px;
+    }
+  }
+  .slider__content.transition-left {
+    animation-name: slide-left;
+    animation-duration: 1s;
+  }
+  @keyframes slide-right {
+    from {
+      left: 450px;
+    }
+    to {
+      left: -900px;
+    }
+  }
+  .slider__content.transition-right {
+    animation-name: slide-right;
+    animation-duration: 1s;
   }
 }
 
@@ -1031,6 +1138,7 @@ template {
 @media screen and (max-width: 767px) {
   .slider__left {
     order: 2;
+    margin: 0 40px 0 50px;
   }
 }
 
@@ -1053,6 +1161,7 @@ template {
 @media screen and (max-width: 767px) {
   .slider__right {
     order: 3;
+    margin: 0 50px 0 40px;
   }
 }
 

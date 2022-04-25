@@ -1,22 +1,97 @@
 .slider__content{
+   position: relative;
+   left: 85px;
    width: 83%;
    padding: 60px 0 60px;
-   @include flex($f-flow: row nowrap,$j-cont: space-between);
+   @include flex($f-flow: row nowrap,$j-cont: space-around);
+   gap: 90px;
+   @keyframes slide-left {
+      from{
+         left: 85px;
+      }
+      to{
+         left: 1165px;
+      }
+   }
+   &.transition-left{
+      animation-name: slide-left;
+      animation-duration: 1s;
+   }
 
+   @keyframes slide-right {
+      from{
+         left: 85px;
+      }
+      to{
+         left: -995px;
+      }
+   }
+   &.transition-right{
+      animation-name: slide-right;
+      animation-duration: 1s;
+   }
    @include media-laptop  {
+      left: 160px;
+      width: 580px;
       justify-content: space-around;
-      gap: 32px;
-      >:nth-child(3){
-         display: none;
+      gap: 40px;
+      @keyframes slide-left {
+         from{
+            left: 160px;
+         }
+         to{
+            left: 1090px;
+         }
+      }
+      &.transition-left{
+         animation-name: slide-left;
+         animation-duration: 1s;
+      }
+   
+      @keyframes slide-right {
+         from{
+            left: 160px;
+         }
+         to{
+            left: -770px;
+         }
+      }
+      &.transition-right{
+         animation-name: slide-right;
+         animation-duration: 1s;
       }
    }
    @include media-tablet {
       width: 100%;
+      left: 450px;
       justify-content: space-around;
       align-items: center;
       padding: 42px 0 18px;
-      >:nth-child(2){
-         display: none;
+      gap: 180px;
+      @keyframes slide-left {
+         from{
+            left: 450px;
+         }
+         to{
+            left: 1800px;
+         }
+      }
+      &.transition-left{
+         animation-name: slide-left;
+         animation-duration: 1s;
+      }
+   
+      @keyframes slide-right {
+         from{
+            left: 450px;
+         }
+         to{
+            left: -900px;
+         }
+      }
+      &.transition-right{
+         animation-name: slide-right;
+         animation-duration: 1s;
       }
    }
 }

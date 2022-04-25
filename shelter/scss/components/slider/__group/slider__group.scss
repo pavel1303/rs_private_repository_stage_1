@@ -1,0 +1,10 @@
+.slider__group{
+   @include flex(row nowrap, center, space-between);
+   gap:90px;
+   @include media-laptop{
+      gap: 40px;
+   }
+   @include media-tablet{
+      gap: 180px;
+   }
+}
