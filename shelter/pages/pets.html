@@ -106,11 +106,11 @@
                   </div>
                </div>
                <div class="slider__control">
-                  <div class="slider__move slider__move--disable">&LT;&LT;</div>
-                  <div class="slider__move slider__move--disable">&LT;</div>
-                  <div class="slider__move slider__move--active">1</div>
-                  <div class="slider__move">&GT;</div>
-                  <div class="slider__move">&GT;&GT;</div>
+                  <div class="slider__move slider__move--disable" id="firstPage">&LT;&LT;</div>
+                  <div class="slider__move slider__move--disable" id="prePage">&LT;</div>
+                  <div class="slider__move slider__move--active" id="currentPage">1</div>
+                  <div class="slider__move" id="nextPage">&GT;</div>
+                  <div class="slider__move" id="lastPage">&GT;&GT;</div>
                </div>
             </div>
          </div>
@@ -136,6 +136,7 @@
    </footer>
    <script src="../js/pets_data.js"></script>
    <script src="../js/index.js"></script>
+   <script src="../js/pangination.js"></script>
 </body>
 
 </html>
