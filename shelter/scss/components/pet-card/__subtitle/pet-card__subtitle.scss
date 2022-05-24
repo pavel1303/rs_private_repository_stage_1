@@ -1,0 +1,5 @@
+.pet-card__subtitle{
+   margin: 31px 0 26px 0;
+   @include font($size:#{$subtitle}, $color: #{$titles});
+   letter-spacing: 1.4px;
+}

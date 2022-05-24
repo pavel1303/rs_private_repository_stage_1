@@ -1,0 +1,11 @@
+.slider{
+   position: relative;
+   width: 100%;
+   @include flex($j-cont: space-between);
+   @include media-tablet {
+      padding-bottom: 41px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 0px 0px;
+   }
+}

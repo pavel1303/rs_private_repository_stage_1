@@ -1,0 +1,7 @@
+.about__title{
+   margin: 0 0 24px 0;
+   max-width: 370px;
+   @include media-tablet {
+      padding: 0 15px;
+   }
+}

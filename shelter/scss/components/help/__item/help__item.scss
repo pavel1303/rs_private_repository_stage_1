@@ -1,0 +1,14 @@
+.help__item{
+   width: max-content;
+   @include flex(column nowrap, center, space-between);
+   gap: 30px;
+   @include media-laptop{
+      flex-basis: 25%;
+      min-width: 170px;
+   }
+   @include media-tablet{
+      flex-basis: 35%;
+      min-width: 130px;
+      gap: 20px;
+   }
+}

@@ -1,0 +1,20 @@
+.about{
+   padding: 80px 0 100px;
+   background-color: $light-xl;
+   .container{
+      @include flex(row-reverse nowrap, center, center);
+   }
+   @include media-laptop  {
+      .container{
+         flex-direction: column;
+         align-items: center;
+      }
+}
+   @include media-tablet {
+      padding: 42px 0;
+      .container{
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+}

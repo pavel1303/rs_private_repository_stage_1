@@ -1,0 +1,16 @@
+.donation{
+   padding: 80px 0 100px;
+   background-color: $light-l;
+   .container{
+      @include flex(row-reverse nowrap);
+      gap: 34px;
+   }
+   @include media-laptop{
+      .container{
+         flex-direction: column;
+      }
+   }
+   @include media-tablet{
+      padding: 42px 0;
+   }
+}

@@ -1,0 +1,12 @@
+.popup__img{
+   width: 500px;
+   height: 500px;
+   border-radius: 9px;
+   @include media-laptop{
+      width: 350px;
+      height: 350px;
+   }
+   @include media-tablet{
+      display: none;
+   }
+}

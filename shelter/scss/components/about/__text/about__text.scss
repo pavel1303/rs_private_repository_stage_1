@@ -1,0 +1,17 @@
+.about__text{
+   margin: 0 0 25px 0;
+   @include font(Arial, normal, 400, $p-l-size, $paragraph-l);
+   line-height: 160%;
+   &:last-of-type{
+      margin-bottom: 0px;
+   }
+   
+   @include media-tablet {
+      padding: 0 15px;
+      text-align: justify;
+      margin-bottom: 20px;
+   }
+   @include media-tablet {
+      margin: 0 0 20px 0;
+   }
+}

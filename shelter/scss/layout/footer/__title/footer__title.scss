@@ -1,0 +1,12 @@
+.footer__title{
+   margin: 15px 0 0 0;
+   color: $light-xl;
+   line-height: 130%;
+   letter-spacing: 0.06em;
+   @include media-laptop{
+      margin: 0;
+   }
+   @include media-tablet{
+
+   }
+}

@@ -1,0 +1,6 @@
+.start__button{
+   width: 1000px;
+   @include media-laptop  {
+      align-self: center;
+   }
+}

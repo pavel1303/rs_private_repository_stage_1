@@ -1,0 +1,24 @@
+.donation__button{
+   position: relative;
+   margin-top: 18px;
+   justify-content: flex-end;
+   padding: 0 23px 0 15px;
+   width: 83%;
+   height: 43px;
+   border-radius: 9px;
+   font-size: $subtitle;
+   letter-spacing: 1.2px;
+   &::before{
+      content: url('../assets/icons/credit-card.svg');
+      position: absolute;
+      left: 14px;
+      top: 10px;
+   }
+   @include media-tablet{
+      box-sizing: border-box;
+      padding: 0 15px 0 15px;
+      width: 281px;
+      font-size: $p-l-size;
+      letter-spacing: 1px;
+   }
+}

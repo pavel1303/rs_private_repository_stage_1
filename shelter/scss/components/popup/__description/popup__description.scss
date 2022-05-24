@@ -1,0 +1,15 @@
+.popup__description{
+   margin: 40px 0 0 0;
+   width: 350px;
+   @include font($size: #{$p-l-size});
+   letter-spacing: 0.06em;
+   @include media-laptop{
+      margin-top: 20px;
+      width: 261px;
+      font-size: 13px;
+      line-height: 110%;
+   }
+   @include media-tablet{
+      width: 245px;
+   }
+}

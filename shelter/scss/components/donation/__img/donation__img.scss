@@ -1,0 +1,9 @@
+.donation__img{
+   @include media-laptop{
+      padding-top: 27px;
+   }
+   @include media-tablet{
+      max-width: 260px;
+      padding-top: 7px;
+   }
+}

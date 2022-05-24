@@ -1,0 +1,6 @@
+.donation__title{
+   margin: 0;
+   @include media-tablet{
+      font-size: $h3-size-mobile;
+   }
+}

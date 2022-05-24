@@ -1,0 +1,14 @@
+.start__img{
+  max-width: 698px;
+
+  @include media-laptop  {
+    align-self: flex-end;
+    // padding-left: 140px;
+    max-width: 569px;
+ }
+  @include media-tablet {
+    align-self: flex-end;
+    // padding-left: 40px;
+    max-width: 260px;
+ }
+}

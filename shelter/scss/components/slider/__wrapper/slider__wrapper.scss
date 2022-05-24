@@ -1,0 +1,10 @@
+.slider__wrapper{
+   width: 980px;
+   overflow: hidden;
+   @include media-laptop{
+      width:580px;
+   }
+   @include media-tablet{
+      margin: 0 10px;
+   }
+}

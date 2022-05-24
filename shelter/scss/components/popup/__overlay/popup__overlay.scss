@@ -1,0 +1,17 @@
+.popup__overlay{
+   position: absolute;
+   left: 0;
+   top: 0;
+   display: block;
+   width: 100%;
+   height: 100%;
+   background-color: rgba($color: #000000, $alpha: 0.6);
+
+   &:hover{
+      cursor: pointer;
+
+      +.popup__window > .popup__close{
+         background-color: $primary;
+      }
+   }
+}

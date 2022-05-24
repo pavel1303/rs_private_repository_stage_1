@@ -1,0 +1,11 @@
+.title{
+   letter-spacing: 2.1px;
+   line-height: 130%;
+   @include font(Georgia, normal, 400, $h3-size, $titles);
+   @include media-tablet {
+      font-size: $h3-size-mobile;
+      letter-spacing: 0.06em;
+      text-align: center;
+      line-height: 129%;
+   }
+}

@@ -1,0 +1,11 @@
+.about__img{
+   padding-right: 120px;
+   margin:0;
+   @include media-laptop  {
+      padding: 78px 0 0 0;
+}
+   @include media-tablet {
+      max-width: 260px;
+      padding: 42px 0 0 0;
+   }
+}

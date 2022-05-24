@@ -1,0 +1,17 @@
+.navigation{
+   @include flex(row nowrap, center, space-between);
+   list-style: none;
+   @include media-tablet{
+      position: fixed;
+      right: -1000px;
+      top: 0;
+      margin: 0;
+      padding: 248px 38px;
+      @include flex(column nowrap, center, flex-start);
+      gap: 40px;
+      width: 320px - 76px;
+      height: 100%;
+      background-color: $text-in-btn;
+      transition: all 0.7s;
+   }
+}

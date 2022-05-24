@@ -1,0 +1,25 @@
+.footer {
+   padding: 40px 0 0 0 ;
+   width: 100%;
+   background: url('../assets/images/start-screen-gradient-background.png');
+   background-size: cover;
+   .container{
+      @include flex(row nowrap, start, flex-start);
+      gap: 160px;
+   }
+   @include media-laptop{
+      padding: 30px 0 0 0;
+      .container{
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 68px 57px;
+      }
+      }
+   
+   @include media-tablet{
+      .container{
+         gap: 46px 0;
+
+      }  
+   }
+}
